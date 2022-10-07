@@ -166,8 +166,8 @@ header {
 @keyframes logoshow4-animation {
   from{
     opacity: 0;
-    filter:blur(1px);
-    transform: translateX(-10vw);
+    filter:blur(4px);
+    transform: translateX(10vw);
   }
   to
   {
@@ -230,17 +230,6 @@ ul {
   align-items: start;  
 }
 
-.backlink
-{
-  pointer-events: none;
-  color: inherit;
-  text-decoration: inherit;
-}
-.container.active
-{
-
-  pointer-events: unset;
-}
 .container.active .logoplace{
   visibility: hidden;
 
@@ -259,7 +248,7 @@ ul {
   letter-spacing: 1px;
   transition: 0.3s;
   opacity: 0;
-  transform: translateX(10px);
+  transform: translateX(-10px);
   display: flex;
   border-radius: 2px;
 }
@@ -391,11 +380,11 @@ ul {
 .container.active .main {
  animation: logoshow4-animation 3s;
   background-image: url(images/logo.png);
-  background-size: 25%;
+  background-size: 120%;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 5;
- transform: translateX(-10vw);
+ transform: translateX(-5vw);
   filter: blur(10px);
 }
 
