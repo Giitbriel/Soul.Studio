@@ -224,7 +224,7 @@ ul {
   align-items: start;  
 }
 
-.linktest
+/*.linktest
 {
   pointer-events: none;
   color: inherit;
@@ -234,7 +234,7 @@ ul {
 {
 
   pointer-events: unset;
-}
+}*/
 .container.active .logoplace{
 
   animation: logoshow1-animation 2s;
