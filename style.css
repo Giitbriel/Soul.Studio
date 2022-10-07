@@ -224,7 +224,7 @@ ul {
   right: 1vw;
   top: 15vh;
   height: 100vh;
-  z-index: 0;
+  z-index: 5;
   display: flex;
   justify-content: end;
   align-items: start;  
@@ -263,11 +263,6 @@ ul {
   display: flex;
   border-radius: 2px;
 }
-
-.links a:hover {
-  color: rgba(255, 255, 255, 0);
-}
-
 .container.active .links a, .container.active .demo-icon{
   animation: logoshow-animation 2s  ease ;
   opacity: 1;
