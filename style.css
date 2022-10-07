@@ -162,7 +162,7 @@ header {
   from{
     opacity: 0;
     filter:blur(8px);
-    transform: translateX(0);
+    transform: translateX(-10vw);
   }
   to
   {
@@ -393,7 +393,7 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   z-index: 5;
- /* transform: translateX(-10vw);*/
+ transform: translateX(-10vw);
   filter: blur(2px);
 
 }
