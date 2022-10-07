@@ -9,6 +9,8 @@
 body,
 button {
   font-family: "Poppins", sans-serif;
+  height: 100%;
+  overflow: hidden;
 }
 
 .container {
@@ -110,19 +112,23 @@ header {
   animation: logoshow-animation 2s;
 }
 
+
 .inner {
   max-width: 45rem;
   text-align: center;
   color: #fff;
   padding: 0 2rem;
   animation: logoshow-animation 2s;
+  pointer-events: none;
 }
 
 .title {
   font-size: 2.7rem;
  text-align: center;
 }
-
+.container.active .inner{
+  opacity: 0;
+}
 .container.active .bar  {
   transform: rotate(360deg);
   background-color: rgba(255, 255, 255, 0);
@@ -160,13 +166,13 @@ header {
 @keyframes logoshow4-animation {
   from{
     opacity: 0;
-    filter:blur(8px);
+    filter:blur(1px);
     transform: translateX(-10vw);
   }
   to
   {
     opacity: 1;
-    filter: blur(2px);
+    filter: blur(10px);
    /* transform: translateX(-10vw);*/
   }
 }
@@ -216,26 +222,27 @@ ul {
   position: absolute;
   width: 30%;
   right: 1vw;
-  top: 31vh;
+  top: 15vh;
   height: 100vh;
-  z-index: 5;
+  z-index: 0;
   display: flex;
   justify-content: end;
   align-items: start;  
 }
 
-/*.linktest
+.backlink
 {
   pointer-events: none;
   color: inherit;
   text-decoration: inherit;
 }
-.container.active .linktest
+.container.active
 {
 
   pointer-events: unset;
-}*/
+}
 .container.active .logoplace{
+  visibility: hidden;
 
   animation: logoshow1-animation 2s;
 
@@ -387,16 +394,17 @@ ul {
 }
 */
 .container.active .main {
- animation: logoshow4-animation 2s;
-  background-image: url(images/bglogo.png);
-  background-size: contain;
+ animation: logoshow4-animation 3s;
+  background-image: url(images/logo.png);
+  background-size: 25%;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 5;
  transform: translateX(-10vw);
-  filter: blur(2px);
-
+  filter: blur(10px);
 }
+
+.container.active
 .container.active .linktest{
   opacity: 0;
 }
