@@ -224,7 +224,7 @@ ul {
   top: 15vh;
   height: 100vh;
   z-index: 5;
-  display: flex;
+  display: inline-flex;
   justify-content: end;
   align-items: start;  
 }
@@ -398,15 +398,14 @@ i{
 .sociallinks {
   width: inherit;
   height: inherit;
---i: 0.2s;
-display: flex;  
+display: inline-flex;  
 justify-content: start;
 align-items: start;
 
 }
 .sociallink {
   border-style: none;
-  display: flex;
+  display: inline-flex;
   justify-content: start;
   align-items: start;
   width: inherit;
