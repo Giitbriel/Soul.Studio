@@ -46,8 +46,8 @@ button {
 
 .hamburger-menu {
   position: fixed;
-  top:5px;
-  right:5px; 
+  top:10px;
+  right:15px; 
   height: 2rem;
   width: 3rem;
   cursor: pointer;
@@ -220,7 +220,7 @@ ul {
 
 .links {
   position: absolute;
-  width: 15%;
+  width: 10%;
   right: 0;
   top: 15vh;
   height: 100vh;
@@ -450,6 +450,7 @@ align-items: start;
   transition-duration: 0.7s;
 }
 .menutext{
+  white-space: nowrap;
   font-weight: 600;
 }
 
