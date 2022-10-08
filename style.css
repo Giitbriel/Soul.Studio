@@ -219,7 +219,7 @@ ul {
 
 .links {
   position: absolute;
-  width: 30%;
+  width: 40%;
   right: 20px;
   top: 15vh;
   height: 100vh;
@@ -408,9 +408,9 @@ align-items: start;
   display: inline-flex;
   justify-content: start;
   align-items: start;
+  transform: translateX(-15px);
   width: inherit;
   height: inherit;
-  transform: translateX(-15px);
   text-decoration: none;
 }
 .demo-icon {
