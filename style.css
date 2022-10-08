@@ -48,7 +48,7 @@ button {
   position: fixed;
   top:5px;
   right:5px; 
-  height: 4rem;
+  height: 2rem;
   width: 3rem;
   cursor: pointer;
   display: flex;
@@ -220,8 +220,8 @@ ul {
 
 .links {
   position: absolute;
-  width: 10%;
-  right: 5vw;
+  width: 15%;
+  right: 0;
   top: 15vh;
   height: 100vh;
   z-index: 5;
