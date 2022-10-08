@@ -395,16 +395,22 @@ i{
 .container.active .linktest{
   opacity: 0;
 }
-
-.sociallink {
-  border-style: none;
-  display: inline-flex;
-  justify-content: start;
-  align-items: flex-start;
+.sociallinks {
   width: inherit;
   height: inherit;
-  padding: 0;
-  margin:0;
+--i: 0.2s;
+display: flex;  
+justify-content: start;
+align-items: start;
+
+}
+.sociallink {
+  border-style: none;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: inherit;
+  height: inherit;
   transform: translateX(-15px);
   text-decoration: none;
 }
