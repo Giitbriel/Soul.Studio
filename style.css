@@ -19,7 +19,6 @@ button {
   height:100%;
   overflow: hidden
 
-  transform-style: preserve-3d;
 }
 
 .navbar {
@@ -238,6 +237,7 @@ ul {
 }
 
 .menulink {
+  border-style: none;
   text-decoration: none;
   color: #eee;
   padding: 0.7rem 0;
@@ -248,9 +248,10 @@ ul {
   letter-spacing: 1px;
   transition: 0.3s;
   opacity: 0;
-  transform: translateX(-10px);
-  display: flex;
-  border-radius: 2px;
+  transform: translateX(-1vw);
+  display: inline-flex;
+  justify-content: start;
+  align-items: start;
 }
 .container.active .links a, .container.active .demo-icon{
   animation: logoshow-animation 2s  ease ;
@@ -377,10 +378,13 @@ ul {
   transform: perspective(1300px) rotateY(20deg) translateZ(230px) scale(0.5);
 }
 */
+i{
+  display: flex;
+}
 .container.active .main {
  animation: logoshow4-animation 3s;
   background-image: url(images/logo.png);
-  background-size: 120%;
+  background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 5;
@@ -393,56 +397,38 @@ ul {
   opacity: 0;
 }
 
-.sociallinks {
-    width: inherit;
-    height: inherit;
-  --i: 0.2s;
-  display: flex;  
-
-
-}
-.sociallinks a{
-  text-decoration: none;
-   width: inherit;
-   height: inherit;
- --i: 0.2s;
- justify-content: center;
- align-items: center;
- display: grid;  
- 
- }
-
-.demo-icon {
+.sociallink {
+  border-style: none;
   display: inline-flex;
+  justify-content: start;
+  align-items: flex-start;
+  width: inherit;
+  height: inherit;
+  padding: 0;
+  margin:0;
+  transform: translateX(-1.8vw);
+  text-decoration: none;
+}
+.sociallinks{
+  transform: translateX(-1.8vw);
+  display: flex;
+}
+.demo-icon {
   font-size: 45px;
   color: white;
-  align-items: center;
-  justify-content: center;
   transition: 0.3s;
   opacity: 0;
+  border-style: none;
+  text-decoration: none;
   transform: translateY(10px);  
-}
-.icon-instagram, .icon-facebook-squared{
-  padding-right: 1vw;
 }
 
 .demo-icon:hover, .menulink:hover{
-  background-color: rgba(255,255,255, 0.7);
+  text-decoration: none;
   color:#996699;
-  border-radius:15px;
-  transition-duration: 0.7s;
+  border-style: none;
 }
 
-.icon-instagram:hover
-{
-  margin-right: 7px;
-  transition-duration: 0.7s;
-}
-.icon-facebook-squared:hover
-{
-  margin-left: 7px;
-  transition-duration: 0.7s;
-}
 .menulink:hover .menutext{
   color:#996699;
   font-size:larger;
@@ -454,14 +440,8 @@ ul {
 }
 
 .fb, .ig{
- display: flex;
-
+  display: inline-flex;
 }
-.fb{
-  display: flex;
-
-}
-
 .logoplace
 {
   animation: logoshow-animation 2s;
