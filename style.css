@@ -243,7 +243,6 @@ ul {
   padding: 0.7rem 0;
   z-index: 5;
   font-size: 1rem;
-  font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: 0.3s;
@@ -423,20 +422,33 @@ i{
   transform: translateY(10px);  
 }
 
-.demo-icon:hover, .menulink:hover{
+.menulink:hover{
   text-decoration: none;
-  color:#996699;
+  color:rgb(60, 60, 60);
+  border-style: none;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(118, 118, 118));
+  border-radius: 15px;
+}
+.demo-icon.icon-instagram:hover{
+  text-decoration: none;
+ border-radius: 15px;
+ background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(118, 118, 118));
   border-style: none;
 }
-
+.demo-icon.icon-facebook-squared.icon-2x:hover{
+  text-decoration: none;
+  border-radius: 15px;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(118, 118, 118));
+  color:#ffffff;
+  border-style: none;
+}
 .menulink:hover .menutext{
-  color:#996699;
-  font-size:larger;
-  font-weight: 400;
+  color:rgb(167, 167, 167);
+  font-weight: 600;
   transition-duration: 0.7s;
 }
 .menutext{
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .fb, .ig{
