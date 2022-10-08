@@ -221,12 +221,12 @@ ul {
 .links {
   position: absolute;
   width: 10%;
-  right: 3vw;
+  right: 1vw;
   top: 15vh;
   height: 100vh;
   z-index: 5;
   display: inline-flex;
-  justify-content: start;
+  justify-content: end;
   align-items: start;  
 }
 
