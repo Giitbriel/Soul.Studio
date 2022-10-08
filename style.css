@@ -221,7 +221,7 @@ ul {
 .links {
   position: absolute;
   width: 10%;
-  right: 0;
+  right: 3vw;
   top: 15vh;
   height: 100vh;
   z-index: 5;
