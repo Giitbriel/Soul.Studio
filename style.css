@@ -219,13 +219,13 @@ ul {
 
 .links {
   position: absolute;
-  width: 40%;
-  right: 20px;
+  width: 10%;
+  right: 5vw;
   top: 15vh;
   height: 100vh;
   z-index: 5;
   display: inline-flex;
-  justify-content: end;
+  justify-content: start;
   align-items: start;  
 }
 
@@ -407,8 +407,8 @@ align-items: start;
   border-style: none;
   display: inline-flex;
   justify-content: start;
+  transform: translateX(-1.1vw);
   align-items: start;
-  transform: translateX(-15px);
   width: inherit;
   height: inherit;
   text-decoration: none;
