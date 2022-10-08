@@ -11,6 +11,7 @@ button {
   font-family: "Poppins", sans-serif;
   height: 100%;
   overflow: hidden;
+  max-width: 100%;
 }
 
 .container {
@@ -46,7 +47,7 @@ button {
 .hamburger-menu {
   position: fixed;
   top:5px;
-  right:15px; 
+  right:5px; 
   height: 4rem;
   width: 3rem;
   cursor: pointer;
