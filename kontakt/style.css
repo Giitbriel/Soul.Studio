@@ -122,15 +122,13 @@ header {
 }
 
 .H1{
-  display: block;
   margin-top:20vh;
   margin-bottom: 0px;
   padding: 0px;
 text-align: center;
   color: #fff;
  animation: logoshow-animation 2s;
- font-weight: 600;
- font-size: 2.7rem;
+  font-size: 2.7rem;
 }
 .container.active .H1, .container.active .tekst{
   opacity: 0;
