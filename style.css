@@ -190,12 +190,17 @@ header {
   }
 }
 @keyframes logoshow1-animation {
-  from{
-    opacity: 0;
+  0%{
+    opacity: 1;
     
-    filter:blur(8px);
+    filter:blur(0px);
   }
-  to
+  50%
+  {
+    opacity: 0;
+    filter: blur(8px);
+  }
+  100%
   {
     opacity: 1;
     filter: blur(0px);
@@ -237,7 +242,7 @@ ul {
 
 }
 
-.menulink {
+.menulink{
   border-style: none;
   text-decoration: none;
   color: #eee;
@@ -247,13 +252,17 @@ ul {
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: 0.3s;
-  opacity: 0;
+  visibility: hidden;
   transform: translateX(-1vw);
   display: inline-flex;
   justify-content: start;
   align-items: start;
 }
+.container.active .menulink{
+  visibility: visible;
+}
 .container.active .links a, .container.active .demo-icon{
+  visibility: visible;
   animation: logoshow-animation 2s  ease ;
   opacity: 1;
 }
@@ -402,6 +411,7 @@ i{
 display: inline-flex;  
 justify-content: start;
 align-items: start;
+visibility: hidden;
 
 }
 .sociallink {
@@ -422,6 +432,7 @@ align-items: start;
   border-style: none;
   text-decoration: none;
   transform: translateY(10px);  
+  visibility: hidden;
 }
 
 .menulink:hover{
@@ -459,7 +470,7 @@ align-items: start;
 }
 .logoplace
 {
-  animation: logoshow-animation 2s;
+  animation: logoshow1-animation 4s infinite;
   width: 100px;
   height: 150px;
   padding: 15px 0px 0px 15px;
