@@ -94,24 +94,10 @@ button {
 }
 
 header {
-
   min-height: 100vh;
   width: 100%;
 }
 
-
-.overlay {
-  
-  position: absolute;
-  width: 100vw;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: logoshow-animation 2s;
-}
 .H1{
   margin-top:20vh;
 text-align: center;
