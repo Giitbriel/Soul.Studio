@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-weight: 600;
 }
 
 body,
@@ -111,7 +112,28 @@ header {
   align-items: center;
   animation: logoshow-animation 2s;
 }
+.H1{
+  margin-top:20vh;
+text-align: center;
+font-size: 2.7rem;
+  color: #fff;
+ animation: logoshow-animation 2s;
+}
+.container.active .H1, .container.active .tekst{
+  opacity: 0;
+  margin-top: 0;
+}
 
+.tekst{
+  color: #fff;
+  position: fixed;
+  top: 38vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  text-align: center;
+  
+}
 
 .inner {
   max-width: 45rem;
@@ -122,10 +144,6 @@ header {
   pointer-events: none;
 }
 
-.title {
-  font-size: 2.7rem;
- text-align: center;
-}
 .container.active .inner{
   opacity: 0;
 }
