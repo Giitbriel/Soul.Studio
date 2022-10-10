@@ -236,9 +236,7 @@ ul {
 }
 
 .container.active .logoplace{
-  visibility: hidden;
-
-  animation: logoshow1-animation 2s;
+  animation: logoshow1-animation 4s infinite;
 
 }
 
