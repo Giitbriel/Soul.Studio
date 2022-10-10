@@ -4,40 +4,43 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 body,
 button {
   font-family: "Poppins", sans-serif;
+  font-weight: 800;
   height: 100%;
   overflow: hidden;
   max-width: 100%;
 }
 
 table{
+  transform: translateX(-15vw);
   margin-top: 5vh;
   display: flex;
-  width: 25vw;
-  border-bottom:2px #aeaeae solid;
+  width: 80vw;
   border-collapse: collapse;
 }
-td{
-  border-bottom:2px #aeaeae solid;
-  width: 25vw;
-  padding: 8px;
+
+.cena-zabiegu{
+  text-align: right;
+  border-bottom:4px #aeaeae double;
+  width: 80vw;
+  padding: 8px 20px 8px 0px;
   top:10vh;
   border-radius: 5px;
-  border-collapse: collapse;
-
 }
 .nazwa-zabiegu{
-  border-bottom:2px #aeaeae solid;
+  text-align: left;
+  align-items: start;
+  border-bottom:4px #aeaeae double;
   width: 70vw;
-  padding: 8px;
+  padding: 8px 0px 8px 20px;
   top:10vh;
   border-radius: 5px;
-  border-collapse: collapse;
-
 }
 .container {
   min-height: 100vh;
@@ -137,7 +140,11 @@ header {
   animation: logoshow-animation 2s;
 }
 
-
+.H1{
+text-align: center;
+  color: #fff;
+ animation: logoshow-animation 2s;
+}
 .inner {
   max-width: 45rem;
   text-align: center;
